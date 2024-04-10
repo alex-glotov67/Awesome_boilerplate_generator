@@ -1,0 +1,42 @@
+{
+  "name": "awesome-boilerplate-generator",
+  "version": "1.0.0",
+  "description": "CLI for generating awesome boilerplate code for various technologies",
+  "main": "cli.js",
+  "type": "module",
+  "scripts": {
+    "start": "node cli.js",
+    "format": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "CLI",
+    "boilerplate",
+    "generator"
+  ],
+  "author": "Oleksandr Hlotov",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
