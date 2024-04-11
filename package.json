@@ -1,6 +1,6 @@
 {
   "name": "abg-cli",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "CLI for generating awesome boilerplate code for various technologies",
   "main": "index.js",
   "type": "module",
