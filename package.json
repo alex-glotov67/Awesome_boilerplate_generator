@@ -1,13 +1,13 @@
 {
   "name": "abg-cli",
-  "version": "0.1.12",
+  "version": "0.1.14",
   "description": "CLI for generating awesome boilerplate code for various technologies",
-  "main": "index.js",
+  "main": "./dist/abg-cli.cjs",
   "type": "module",
   "preferGlobal": true,
   "private": false,
   "scripts": {
-    "start": "node index.js",
+    "start": "node ./dist/abg-cli.cjs",
     "format": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
     "build": "npm version patch --force && vite build",
     "lint": "eslint ."
@@ -49,6 +49,6 @@
     "prettier/prettier": "error"
   },
   "bin": {
-    "abg-cli": "index.js"
+    "abg-cli": "./dist/abg-cli.cjs"
   }
 }
