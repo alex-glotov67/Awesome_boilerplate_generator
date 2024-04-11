@@ -1,5 +1,8 @@
+#!/usr/bin/env node
+
 import inquirer from 'inquirer';
 import chooseFrontendTechnology from './variants/frontend.js';
+import generateProject from './generateProject.js';
 
 async function main() {
   const { projectName } = await inquirer.prompt([
@@ -49,6 +52,9 @@ async function main() {
   ]);
 
   console.log({ projectName, ...technologies, ...utils }); // Для перевірки вибору імені проекту та технологій
+  await generateProject(projectName);
 }
 
 main();
+
+export default main;

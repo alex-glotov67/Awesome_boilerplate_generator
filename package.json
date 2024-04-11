@@ -1,11 +1,13 @@
 {
-  "name": "awesome-boilerplate-generator",
-  "version": "1.0.0",
+  "name": "abg-cli",
+  "version": "0.1.7",
   "description": "CLI for generating awesome boilerplate code for various technologies",
-  "main": "cli.js",
+  "main": "index.js",
   "type": "module",
+  "preferGlobal": true,
+  "private": false,
   "scripts": {
-    "start": "node cli.js",
+    "start": "node index.js",
     "format": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
     "lint": "eslint ."
   },
@@ -16,6 +18,10 @@
   ],
   "author": "Oleksandr Hlotov",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex-glotov67/abg-cli"
+  },
   "dependencies": {
     "inquirer": "^8.0.0"
   },
@@ -38,5 +44,8 @@
   ],
   "rules": {
     "prettier/prettier": "error"
+  },
+  "bin": {
+    "abg-cli": "index.js"
   }
 }
