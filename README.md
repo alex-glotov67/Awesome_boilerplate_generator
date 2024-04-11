@@ -19,17 +19,24 @@ npx abg-cli
 
 This command will launch an interactive prompt to guide you through the project generation process.
 
+After creating project repository don`t forget to run command:
+
+```bash
+npm install
+```
+or
+
+```bash
+npm i
+```
+
+to install packages in your project
+
 ## Features
 
 - Easily generate boilerplate code for various technologies.
 - Customizable project templates.
 - Built-in formatting and linting tools.
-
-## Commands
-
-- `npm start`: Start the CLI interface.
-- `npm run format`: Format code using Prettier.
-- `npm run lint`: Lint code using ESLint.
 
 ## Repository
 
